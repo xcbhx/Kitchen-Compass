@@ -1,0 +1,25 @@
+body, html {
+    margin: 2%;
+}
+
+/* Navbar */
+.top_nav { 
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.icon {
+    color: brown;
+}
+
+.navbar_links {
+   /* position: relative; */
+   float: left;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   display: flex;
+   justify-content: space-around;
+   color: black;
+}
