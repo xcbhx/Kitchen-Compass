@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<label for="meals">Select Type of Meal:</label>
+<select name="meals" id="meals">
+    <option value="breakfast">Breakfast</option>
+    <option value="lunch">Lunch</option>
+    <option value="Dinner">Dinner</option>
+    <option value="sidedishes">Side Dishes</option>
+    <option value="Dessert">Dessert</option>
+</select>
+
+<form action="/addrecipe" method="POST">
+    <input type="file" name="file">
+    <button type="submit">Upload</button>
+</form>
+
+<div class="time">
+    <label for="prep">Prep Time:</label>
+    <input type="time">
+    
+    <label for="cook">Cook Time:</label>
+    <input type="time">
+    
+    <label for="total">Total Time:</label>
+    <input type="time">
+
+    <label for="servings">Servings:</label>
+    <input type="number">
+</div>
+
+<label for="ingredients">Ingredients</label>
+<ul>
+    <li><input type="text"></li>
+    <li><input type="text"></li>
+    <li><input type="text"></li>
+    <li><input type="text"></li>
+    <li><input type="text"></li>
+    <li><input type="text"></li>
+</ul>
+
+<button>Add More Ingredients</button>
+
+<label for="directions">Directions</label>
+<ol>
+    <li>Step: <input type="text"></li>
+    <li>Step: <input type="text"></li>
+    <li>Step: <input type="text"></li>
+    <li>Step: <input type="text"></li>
+    <li>Step: <input type="text"></li>
+</ol>
+
+<button>Add More Steps</button>
+
+<label for="comments">Comments</label>
+<input type="text">
+
+<button type="submit">Save Recipe</button>
+
+
+{% endblock %} 

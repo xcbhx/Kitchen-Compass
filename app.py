@@ -6,6 +6,7 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
+
 @app.route("/breakfast")
 def breakfast():
     return render_template("breakfast.html")
@@ -26,6 +27,15 @@ def side_dishes():
 def dessert():
     return render_template("dessert.html")
 
+@app.route("/addrecipe", methods=["GET", "POST"])
+def add_recipe():
+    # if request.method == "POST":
+    #     dish = request.form["dish"]
+    #     prep = request.form["prep"]
+    #     cook = request.form["cook"]
+    #     servings = request.form["servings"]
+
+    return render_template("addrecipe.html")
 
 
 
